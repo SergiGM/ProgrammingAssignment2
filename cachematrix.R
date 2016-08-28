@@ -6,7 +6,7 @@
 ## information of the assignment using a vector.
 
 ## This function generates a 'special' matrix to cache its inverse.
-## It include 4 functions to set its value and its inverse and to get
+## It includes 4 functions to set its value and its inverse and to get
 ## its entries and its inverse respectively.
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -23,7 +23,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## We want to return the inverse matrix of 'x'. Now we are ready to check if the inverse has already been calculated, through the function above. If so, it's returned from the cache.
+## We want to return the inverse matrix of 'x'. 
+## Now we are ready to check if the inverse has already been
+## calculated, through the function above. If so, it's returned from
+## the cache.
 
 cacheSolve <- function(x, ...) {
         invmat <- x$getInverse()
